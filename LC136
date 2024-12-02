@@ -1,0 +1,7 @@
+int singleNumber(int* nums, int numsSize) {
+    int singlenumber = 0;
+    for (int i = 0; i < numsSize; i++) {
+        singlenumber = singlenumber ^ nums[i];
+    }
+    return singlenumber;
+}
